@@ -8,9 +8,60 @@
         <meta content="telephone=no" name="format-detection">
         <meta content="email=no" name="format-detection">
         <title>标题</title>
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+        <link type="text/css" rel="styleSheet"  href="./index.css" />
+        <link type="text/css" rel="styleSheet"  href="../../common/layout.css" />
     </head>
     <body>
-        这里是home页面
+        <!-- 头部logo 标题-->
+        <div class="header">
+          <span class="logo">logo</span>
+          <span class="header_title">系统后台管理</span>
+        </div>
+        <!-- 头部轮播图-->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/timg1.jpeg" alt="activity"></div>
+            <div class="swiper-slide"><img src="./assets/timg2.jpeg" alt="activity"></div>
+            <div class="swiper-slide"><img src="./assets/timg3.jpeg" alt="activity"></div>
+          </div>
+        <div class="swiper-pagination"></div>
+    </div>
+        <!-- 通知 栏 -->
+        <div class="notice" >
+          <span class="horn"></span>
+          <span class="notice_text"> 关于线上运行通知</span>
+        <div>
+        <!-- 预定下单 举办投诉 在线客服-->
+        <div class="item_list" >
+            <div class="item"><span></span><span>预定下单</span></div>
+            <div class="item"><span></span><span>举报投诉</span></div>
+            <div class="item"><span></span><span>在线客服</span></div>
+        <div>
+        <!-- 产品详情 -->
+        <div class="product_details">
+          <div class="product_header">
+            <span class="product_line"></span>
+            <span class="product_title">产品详情</span>
+            <span class="product_line"></span>
+          </div>
+        </div>
+
+        <!-- navigator 底部导航-->
+        <div class="navigator">
+            <span class="navigator_item"></span>
+            <span class="navigator_item"></span>
+          </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          loop: true, // 循环模式选项
+          autoplay: true,//可选选项，自动滑动
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+          }
+        })        
+        </script>
 </html>
