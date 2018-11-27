@@ -1,13 +1,59 @@
-$bg-color: #333;
+
+@import	"../common/common";
+$color: #333;
 $light-color: #f8f8f8;
 $line-color: #eaeaea;
 $light-word: #666666;
 
 body
+	.header
+		height: pxTorem(80);
+		color: $color;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		.logo
+			position: absolute;
+			top: 50%;
+			left: pxTorem(24);
+			transform: translateY(-50%);
+			height: pxTorem(40);
+			width: pxTorem(40);
+			border-radius: pxTorem(40);
+			background-color: gray;
+		.header_title
+			font-size: pxTorem(36);
 	.swiper-container
-    width: 100%;
-		  .swiper-slide
+		width: 100%;
+		height: pxTorem(320);
+		.swiper-wrapper
 				width: 100%;
-				img 
+				.swiper-slide
 					width: 100%;
-				
+					img
+						width: 100%;
+						height: pxTorem(320);
+		.swiper-pagination
+			>span
+				width: pxTorem(14);
+				height: pxTorem(14);
+				display: inline-block;
+				border-radius: 100%;
+				margin-right: pxTorem(20);
+			.swiper-pagination-bullet
+				background: #fff;
+				opacity: 0.8;
+			.swiper-pagination-bullet-active
+				background-color: #f3a13a;				
+	.notice
+		height: pxTorem(72);
+		color: $color;	
+		font-size: pxTorem(28);
+		border-bottom: pxTorem(1) solid $line-color;
+		display: flex;
+		align-items: center;
+		.horn
+			margin: 0 pxTorem(24)
+	.item_list
+	.item

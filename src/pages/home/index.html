@@ -10,12 +10,13 @@
         <title>标题</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
         <link type="text/css" rel="styleSheet"  href="./index.css" />
-        <link type="text/css" rel="styleSheet"  href="../../common/layout.css" />
+        <link type="text/css" rel="styleSheet"  href="../common/layout.css" />
     </head>
+        <script type="text/javascript" src="../../utils/common.js"></script>
     <body>
         <!-- 头部logo 标题-->
         <div class="header">
-          <span class="logo">logo</span>
+          <span class="logo"></span>
           <span class="header_title">系统后台管理</span>
         </div>
         <!-- 头部轮播图-->
@@ -26,17 +27,17 @@
             <div class="swiper-slide"><img src="./assets/timg3.jpeg" alt="activity"></div>
           </div>
         <div class="swiper-pagination"></div>
-    </div>
+        </div>
         <!-- 通知 栏 -->
         <div class="notice" >
-          <span class="horn"></span>
+          <img class="horn" src="./assets/ic_Push.png"></img>
           <span class="notice_text"> 关于线上运行通知</span>
         <div>
         <!-- 预定下单 举办投诉 在线客服-->
         <div class="item_list" >
-            <div class="item"><span></span><span>预定下单</span></div>
+            <!-- <div class="item"><span></span><span>预定下单</span></div>
             <div class="item"><span></span><span>举报投诉</span></div>
-            <div class="item"><span></span><span>在线客服</span></div>
+            <div class="item"><span></span><span>在线客服</span></div> -->
         <div>
         <!-- 产品详情 -->
         <div class="product_details">
@@ -61,6 +62,7 @@
           // 如果需要分页器
           pagination: {
             el: '.swiper-pagination',
+            clickable: true,
           }
         })        
         </script>
