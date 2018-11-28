@@ -54,6 +54,40 @@ body
 		display: flex;
 		align-items: center;
 		.horn
-			margin: 0 pxTorem(24)
+			margin: 0 pxTorem(24);
+			width: pxTorem(33);
 	.item_list
-	.item
+		padding: pxTorem(32) pxTorem(82);
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		.item
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: pxTorem(28);
+			.item_img
+				width: pxTorem(100);
+			>span
+				font-size: pxTorem(28);
+				color: $color;
+	.product_details
+		padding-top: pxTorem(20);
+		background-color: $light-color;
+		.product_header
+			width: 100%;
+			height: pxTorem(80);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+		.product_line
+			display: inline-block;
+			height: pxTorem(1);
+			width: pxTorem(60);
+			margin: 0 pxTorem(8);
+			background-color: $line-color;
+		.product_title
+			

@@ -9,10 +9,16 @@
         <meta content="email=no" name="format-detection">
         <title>标题</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
-        <link type="text/css" rel="styleSheet"  href="./index.css" />
-        <link type="text/css" rel="styleSheet"  href="../common/layout.css" />
+        <link type="text/css" rel="stylesheet"  href="./index.css" />
+        <link type="text/css" rel="stylesheet"  href="../../common/layout.css" />
+        <style>
+        html {
+          padding: 0;
+          margin: 0;
+        }
+        </style>
     </head>
-        <script type="text/javascript" src="../../utils/common.js"></script>
+        <script type="text/javascript" src="../../libs/common.js"></script>
     <body>
         <!-- 头部logo 标题-->
         <div class="header">
@@ -32,13 +38,13 @@
         <div class="notice" >
           <img class="horn" src="./assets/ic_Push.png"></img>
           <span class="notice_text"> 关于线上运行通知</span>
-        <div>
+        </div>
         <!-- 预定下单 举办投诉 在线客服-->
         <div class="item_list" >
-            <!-- <div class="item"><span></span><span>预定下单</span></div>
-            <div class="item"><span></span><span>举报投诉</span></div>
-            <div class="item"><span></span><span>在线客服</span></div> -->
-        <div>
+            <div class="item"><img src="./assets/ic_Order.png" class="item_img" /><span>预定下单</span></div>
+            <div class="item"><img src="./assets/ic_Report.png" class="item_img" /><span>举报投诉</span></div>
+            <div class="item"><img src="./assets/ic_Customerservice.png" class="item_img" /><span>在线客服</span></div>
+        </div>
         <!-- 产品详情 -->
         <div class="product_details">
           <div class="product_header">
@@ -50,9 +56,9 @@
 
         <!-- navigator 底部导航-->
         <div class="navigator">
-            <span class="navigator_item"></span>
-            <span class="navigator_item"></span>
-          </div>
+          <span class="navigator_item"></span>
+          <span class="navigator_item"></span>
+        </div>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script>        
